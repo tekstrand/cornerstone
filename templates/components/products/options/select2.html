@@ -1,0 +1,13 @@
+{{#if this.type "===" "Configurable_PickList_Set"}}
+    {{#if this.partial "===" "set-radio"}}
+        {{> components/products/options/set-radio this }}
+    {{/if}}
+    {{#if this.partial "===" "set-rectangle"}}
+        {{> components/products/options/set-rectangle this }}
+    {{/if}}
+    {{#if this.partial "===" "set-select"}}
+        {{> components/products/options/set-select this select2="true" }}
+    {{/if}}
+{{else}}
+    {{{dynamicComponent 'components/products/options'}}}
+{{/if}}

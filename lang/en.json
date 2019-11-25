@@ -890,5 +890,12 @@
     },
     "carousel": {
         "arrowAriaLabel": "Go to slide [NUMBER] of"
+    },
+    "custom": {
+        "color_accuracy_warning": "Due to differences in monitors and technical factors, the colors here cannot be represented with their true qualities. These color samples should only be considered a guide. Please refer to actual C2 swatches for true color.",
+        "free_shipping_over_99": "Free Shipping on orders over $99",
+        "light_reflection_value": "LRV",
+        "new_number": "New Number",
+        "old_number": "Color Number"
     }
 }

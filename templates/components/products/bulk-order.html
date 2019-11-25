@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            {{#each product.options}}
+                <td>{{this.display_name}}</td>
+            {{/each}}
+            <td>Qty</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each product.options}}
+            {{#each this.values}}
+                <tr>
+                    <td>{{label}}</td>
+                    <td><input class="form-input" type="number" id="attribute_number_{{id}}" name="attribute[{{this.id}}]"></td>
+                </tr>
+            {{/each}}
+        {{/each}}
+    </tbody>
+</table>

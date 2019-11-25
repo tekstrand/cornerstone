@@ -6,7 +6,9 @@ import Review from './product/reviews';
 import collapsibleFactory from './common/collapsible';
 import ProductDetails from './common/product-details';
 import videoGallery from './product/video-gallery';
+<<<<<<< HEAD
 import { classifyForm } from './common/utils/form-utils';
+import 'select2';
 
 export default class Product extends PageManager {
     constructor(context) {
@@ -53,6 +55,8 @@ export default class Product extends PageManager {
 
         this.productReviewHandler();
         this.bulkPricingHandler();
+
+        $('.select2').select2();
     }
 
     ariaDescribeReviewInputs($form) {
