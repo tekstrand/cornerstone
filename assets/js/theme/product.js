@@ -57,6 +57,7 @@ export default class Product extends PageManager {
         this.bulkPricingHandler();
 
         $('.select2').select2();
+<<<<<<< HEAD
     }
 
     ariaDescribeReviewInputs($form) {
@@ -67,6 +68,8 @@ export default class Product extends PageManager {
             $input.siblings('span').attr('id', msgSpanId);
             $input.attr('aria-describedby', msgSpanId);
         });
+=======
+>>>>>>> update
     }
 
     productReviewHandler() {
