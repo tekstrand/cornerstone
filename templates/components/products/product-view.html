@@ -1,5 +1,5 @@
 <div class="productView" {{#if settings.data_tag_enabled}} data-event-type="product" data-entity-id="{{product.id}}" data-name="{{product.title}}" data-product-category="{{#each product.category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{product.brand.name}}" data-product-price="{{#if product.price.with_tax}}{{product.price.with_tax.value}}{{else}}{{product.price.without_tax.value}}{{/if}}" data-product-variant="single-product-option"{{/if}}>
-{{#each product.reviews.messages}}
+    {{#each product.reviews.messages}}
         {{#if error}}
             {{> components/common/alert/alert-error error}}
         {{/if}}
@@ -74,6 +74,10 @@
                     <a href="{{product.brand.url}}"{{#if schema}} itemprop="url"{{/if}}><span{{#if schema}} itemprop="name"{{/if}}>{{product.brand.name}}</span></a>
                 </h2>
             {{/if}}
+            <a class="yotpo bottomLine"
+               data-yotpo-product-id="{{product.id}}"
+               href="#reviews">
+            </a>
             {{#if product.call_for_price}}
                 <p class="productView-price">
                     <span>{{product.call_for_price}}</span>
@@ -259,6 +263,7 @@
             {{else}}
                 {{> components/products/description}}
             {{/if}}
+            <span id="reviews"></span>
         </article>
     {{/if}}
 </div>
