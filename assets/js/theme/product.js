@@ -6,7 +6,6 @@ import Review from './product/reviews';
 import collapsibleFactory from './common/collapsible';
 import ProductDetails from './common/product-details';
 import videoGallery from './product/video-gallery';
-<<<<<<< HEAD
 import { classifyForm } from './common/utils/form-utils';
 import 'select2';
 
@@ -57,7 +56,6 @@ export default class Product extends PageManager {
         this.bulkPricingHandler();
 
         $('.select2').select2();
-<<<<<<< HEAD
     }
 
     ariaDescribeReviewInputs($form) {
@@ -68,8 +66,6 @@ export default class Product extends PageManager {
             $input.siblings('span').attr('id', msgSpanId);
             $input.attr('aria-describedby', msgSpanId);
         });
-=======
->>>>>>> update
     }
 
     productReviewHandler() {
