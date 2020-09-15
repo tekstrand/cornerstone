@@ -1,6 +1,6 @@
 <a href="{{urls.home}}" class="amp-header-link">
     {{#if settings.store_logo.image}}
-        <amp-img src="../assets/img/us-paint-supply-logo.svg"
+        <amp-img src="{{ cdn '/img/us-paint-supply-logo.svg' }}"
             {{#if theme_settings.logo_size '===' 'original' }}
                 width="100"
                 height="50"
